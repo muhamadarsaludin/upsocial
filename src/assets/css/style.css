@@ -1,0 +1,28 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+p,span,a{
+  color: #898989;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #A99BAA;
+}
+
+.shadow{box-shadow:0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important}
+.bg-grape{
+  background-color: #A99BAA;
+}
+.bg-grape:hover{
+  background-color: #a88daa;
+}
+
+.text-grape{
+  color:#A99BAA;
+}
+
+.card-photo{
+  width: 600px !important;
+}

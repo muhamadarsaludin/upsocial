@@ -1,0 +1,15 @@
+.card-post{
+  cursor: pointer;
+  flex-wrap: wrap;
+  flex: initial;
+}
+
+.card-post>img{
+  border-radius: 12px;
+}
+
+.card-post .title{
+  font-size: 1.3em !important;
+  font-weight: bold;
+  color: #A99BAA;
+}
