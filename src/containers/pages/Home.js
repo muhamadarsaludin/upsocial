@@ -39,15 +39,6 @@ export default class Home extends Component {
   }
 
 
-  deletePostApi = (id) => {
-    Axios.delete(API_URL + "posts/" + id)
-      .then(res => {
-        this.getPostApi();
-      })
-      .catch(error => {
-        console.log(error);
-      })
-  }
 
   handleDetailPost = (id) => {
     this.props.history.push(`/detail/${id}`)

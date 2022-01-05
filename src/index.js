@@ -6,10 +6,36 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/style.css';
 import '@fortawesome/fontawesome-free/css/all.css'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux';
+
+
+
+// global state
+const globalState = {
+  posts: [],
+  users: []
+}
+
+
+
+
+// Reducer
+const reducer = (state = globalState, action) => {
+
+  return (state);
+}
+
+// Store
+const store = createStore(reducer);
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
