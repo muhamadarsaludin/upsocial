@@ -66,10 +66,10 @@ export default class DetailUser extends Component {
           <Card className="shadow mb-4" >
             <Card.Body>
               <Row className="align-items-center">
-                <Col sm={2} className="mr-2">
+                <Col sm={2} className="mr-lg-2">
                   <Image fluid src="https://placeimg.com/200/200/people" alt="Image Profile" className='rounded' />
                 </Col>
-                <Col sm={9}>
+                <Col sm={9} className="mt-4 mt-md-0">
                   <h4 className="font-weight-bold text-grape">{this.state.user.name}</h4>
                   <p><i className="fas fa-envelope"></i> {this.state.user.email}</p>
                   <p><i className="fas fa-map-marked-alt"></i> {`${this.state.address.street}, ${this.state.address.suite}, ${this.state.address.city} (${this.state.address.zipcom})`}</p>
@@ -98,7 +98,7 @@ export default class DetailUser extends Component {
                               if (id === photo.albumId) {
                                 return (
                                   <Fragment key={photo.id}>
-                                    <Col md={1} className="mb-4">
+                                    <Col xs={3} md={1} className="mb-4">
                                       <Link to={`/photo/${photo.id}`}>
                                         <Image fluid src={photo.thumbnailUrl} alt="thumbnail photo" className="rounded" />
                                       </Link>

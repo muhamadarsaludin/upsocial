@@ -4,3 +4,16 @@
 .rounded-left{
   border-radius: 5px 0px 0px 5px !important;
 }
+.w-100{
+  width: 100% !important;
+}
+
+.form-search{
+  position: relative;
+}
+
+.form-search > .btn-search{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
