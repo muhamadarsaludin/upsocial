@@ -72,7 +72,7 @@ export default class DetailUser extends Component {
                 <Col sm={9} className="mt-4 mt-md-0">
                   <h4 className="font-weight-bold text-grape">{this.state.user.name}</h4>
                   <p><i className="fas fa-envelope"></i> {this.state.user.email}</p>
-                  <p><i className="fas fa-map-marked-alt"></i> {`${this.state.address.street}, ${this.state.address.suite}, ${this.state.address.city} (${this.state.address.zipcom})`}</p>
+                  <p><i className="fas fa-map-marked-alt"></i> {`${this.state.address.street}, ${this.state.address.suite}, ${this.state.address.city} (${this.state.address.zipcode})`}</p>
                   <p><i className="fas fa-building"></i> {this.state.company.name}</p>
                 </Col>
               </Row>
